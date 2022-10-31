@@ -1,38 +1,113 @@
-.App {
+@media only screen and (max-width: 678px) {
+  .share {
+    display: none;
+  }
+  .share2 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 679px) {
+  .share2 {
+    display: none;
+  }
+  .share {
+    display: block;
+  }
+}
+.profile {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#twitter {
+  height: 30px;
+  font-family: inter-bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+#slack {
+  display: none;
+}
+.dp_container {
+  width: 88px;
+  height: 88px;
+  position: relative;
+  border-radius: 275px;
+}
+.image {
+  opacity: 1;
+  border-radius: 275px;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dp_container:hover .image {
+  opacity: 0.3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dp_container:hover .overlay {
+  opacity: 0.7;
+  background-color: rgba(52, 64, 84, 0.75);
+}
+.footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.contain {
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  text-decoration: none;
+  max-width: 1152px;
+  width: 100%;
+  color: #101828;
+  background-color: #eaecf0;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 28px;
+  font-family: inter;
+  height: fit-content;
+  min-height: 56px;
+  padding-top: 20px;
+  cursor: pointer;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  text-align: center;
+  text-justify: auto;
+}
+sub {
+  font-size: 10px;
+  font-weight: 300px;
+}
+a:active {
+  opacity: 0.8;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  background-color: #d0d5dd;
 }
