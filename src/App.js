@@ -11,7 +11,7 @@ import git from "./assets/images/giticon.png";
 import "./App.css";
 function App() {
   return (
-    <Box minH="800px" h="fit-content" px="20px" my={20}>
+    <Box minH="800px" h="fit-content" px="20px" py="20px" my={20}>
       <div className="profile">
         <Flex direction="column">
           <Image
@@ -50,7 +50,7 @@ function App() {
         <Flex direction="column" rowGap="8px" justify="center" align="center">
           {/* <a href="http://twitter.com/patra_tee">Twitter Link</a> */}
           <a href="http://training.zuri.team" id="btn__zuri">
-            Zuri Training"
+            Zuri Training
           </a>
           <a
             href="https://books.zuri.team"
