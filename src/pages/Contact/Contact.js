@@ -6,26 +6,35 @@ export const Contact = () => {
     document.getElementById("message").placeholder =
       "Hey there, hope you're doing great. Let us collaborate.";
   };
-  const validate = () => {
-    if (document.getElementById("first_name").value === "") {
+  const validate = (e) => {
+    e.preventDefault();
+    const firstName = document.getElementById("first_name");
+    const lastName = document.getElementById("last_name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+    const messageError = document.getElementById("messageError");
+    if (firstName.value === "") {
       alert("Please provide your first name!");
-      document.getElementById("first_name").focus();
+      firstName.focus();
       return false;
     }
-    if (document.getElementById("last_name").value === "") {
+    if (lastName.value === "") {
       alert("Please provide your last name!");
-      document.getElementById("last_name").focus();
+      lastName.focus();
       return false;
     }
-    if (document.getElementById("email").value === "") {
+    if (email.value === "") {
       alert("Please provide your email!");
-      document.getElementById("email").focus();
+      email.focus();
       return false;
     }
-    if (document.getElementById("message").value === "") {
-      alert("Please leave a message");
-      document.getElementById("message").focus();
-      return false;
+    if (message.value === "") {
+      messageError.classList.add("visible");
+      message.classList.add("invalid");
+      messageError.setAttribute("aria-hidden", false);
+      messageError.setAttribute("aria-invalid", true);
+      document.getElementById("mess age").focus();
+      return true;
     } else alert("Thank you! Your response has been submitted successfully.");
   };
   return (
@@ -82,6 +91,14 @@ export const Contact = () => {
           id="message"
           onClick={changePlaceholder}
         />
+        <p
+          role="alert"
+          id="messageError"
+          aria-hidden="true"
+          style={{ color: "red", fontFamily: "inter" }}
+        >
+          Please enter a message
+        </p>
         <Checkbox colorScheme="blue" id="chk" mt="26px">
           You agree to providing your data to patra who may contact you.
         </Checkbox>

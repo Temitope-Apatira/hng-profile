@@ -70,11 +70,11 @@
 }
 
 .css-1ydjfm6 {
-  height: 20px;
-  width: 20px;
+  height: 20px !important;
+  width: 20px !important;
   background: #ffffff;
-  border: 1px solid #d0d5dd;
-  border-radius: 6px;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
 }
 .css-6x44c9 {
   font-family: inter;
@@ -116,4 +116,16 @@ button {
   color: #344054;
   margin-top: 24px !important;
   margin-bottom: 6px !important;
+}
+#messageError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#messageError.visible {
+  display: block;
+}
+
+#message.invalid {
+  border-color: red;
 }
