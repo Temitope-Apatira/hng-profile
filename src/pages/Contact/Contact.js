@@ -53,28 +53,29 @@ export const Contact = () => {
           placeholder="yourname@email.com"
           id="email"
         />
+
+        <FormLabel mt="24px" className="label">
+          Message
+        </FormLabel>
+        <Textarea
+          type="text"
+          placeholder="Send me a message and I'll reply you as soon as possible..."
+          id="message"
+          onClick={changePlaceholder}
+        />
+        <Checkbox colorScheme="blue" id="chk" mt="26px">
+          You agree to providing your data to patra who may contact you.
+        </Checkbox>
+        <button
+          id="btn__submit"
+          type="submit"
+          name="submit"
+          value="submit"
+          onClick={submit}
+        >
+          Send message
+        </button>
       </form>
-      <FormLabel mt="24px" className="label">
-        Message
-      </FormLabel>
-      <Textarea
-        type="text"
-        placeholder="Send me a message and I'll reply you as soon as possible..."
-        id="message"
-        onClick={changePlaceholder}
-      />
-      <Checkbox colorScheme="blue" id="chk" mt="26px">
-        You agree to providing your data to patra who may contact you.
-      </Checkbox>
-      <button
-        id="btn__submit"
-        type="submit"
-        name="submit"
-        value="submit"
-        onClick={submit}
-      >
-        Send message
-      </button>
     </div>
   );
 };
