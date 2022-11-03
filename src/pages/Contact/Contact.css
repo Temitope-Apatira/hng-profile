@@ -4,7 +4,7 @@
   margin-top: 64px;
 }
 
-p:nth-of-type(1) {
+.p1 {
   font-family: inter;
   font-style: normal;
   font-weight: 600;
@@ -13,7 +13,7 @@ p:nth-of-type(1) {
   letter-spacing: -0.02em;
   color: #101828;
 }
-p:nth-of-type(2) {
+.p2 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;

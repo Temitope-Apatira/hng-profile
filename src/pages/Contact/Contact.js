@@ -8,8 +8,10 @@ export const Contact = () => {
   };
   return (
     <div className="contact">
-      <p>Contact Me</p>
-      <p>Hi there, contact me to ask me about anything you have in mind.</p>
+      <p className="p1">Contact Me</p>
+      <p className="p2">
+        Hi there, contact me to ask me about anything you have in mind.
+      </p>
       <form action="" method="get">
         <Flex
           columnGap="24px"
