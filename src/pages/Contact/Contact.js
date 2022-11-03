@@ -71,7 +71,7 @@ export const Contact = () => {
           type="submit"
           name="submit"
           value="submit"
-          onClick={submit}
+          // onClick={submit}
         >
           Send message
         </button>
