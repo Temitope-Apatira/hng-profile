@@ -3,14 +3,14 @@ import { Flex, FormLabel, Box, Textarea, Checkbox } from "@chakra-ui/react";
 import "./Contact.css";
 export const Contact = () => {
   const changePlaceholder = () => {
-    const message = (document.getElementById("message").placeholder =
-      "Hey there, hope you're doing great. Let us collaborate.");
+    document.getElementById("message").placeholder =
+      "Hey there, hope you're doing great. Let us collaborate.";
   };
   return (
     <div className="contact">
       <p>Contact Me</p>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form>
+      <form action="" method="get">
         <Flex
           columnGap="24px"
           rowGap="24px"
@@ -54,7 +54,9 @@ export const Contact = () => {
       <Checkbox colorScheme="blue" id="chk" mt="26px">
         You agree to providing your data to patra who may contact you.
       </Checkbox>
-      <button id="btn__submit">Send message</button>
+      <button id="btn__submit" type="submit">
+        Send message
+      </button>
     </div>
   );
 };

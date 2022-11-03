@@ -39,13 +39,21 @@ export const Home = () => {
                 <Image src={camera} mt="60px" ml="30px" />
               </div>
             </div>
-            <Text id="twitter">patra_tee</Text>
+            <Text id="twitter" mt="24px">
+              patra_tee
+            </Text>
             <Text id="slack">Patra</Text>
           </Flex>
         </Flex>
       </div>
       <div className="contain">
-        <Flex direction="column" rowGap="8px" justify="center" align="center">
+        <Flex
+          direction="column"
+          rowGap="8px"
+          justify="center"
+          align="center"
+          mt="56px"
+        >
           {/* <a href="http://twitter.com/patra_tee">Twitter Link</a> */}
           <a href="http://training.zuri.team" id="btn__zuri">
             Zuri Training
