@@ -90,7 +90,7 @@ export const Home = () => {
             <sub>Everything to know about design.</sub>
           </a>
           <a href="/contact" id="contact">
-            Contact us
+            Contact me
           </a>
           <Flex direction="row" columnGap="27px" justify="center" mt="24px">
             <Image src={slack} />
