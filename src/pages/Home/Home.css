@@ -82,7 +82,7 @@ a {
   line-height: 28px;
   font-family: inter;
   height: fit-content;
-  min-height: 56px;
+  min-height: 76px !important;
   padding-top: 20px;
   cursor: pointer;
   border: 1px solid #eaecf0;
