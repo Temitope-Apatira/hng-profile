@@ -20,21 +20,21 @@ export const Contact = () => {
           wrap="wrap"
           mt="48px"
         >
-          <Box maxW="348px" w="100%">
+          <Box maxW="380px" w="100%">
             <FormLabel className="label">First name</FormLabel>
             <input
               type="text"
               placeholder="Enter your first name"
-              maxW="348px"
+              maxW="380px"
               id="first_name"
             />
           </Box>
-          <Box maxW="348px" w="100%">
+          <Box maxW="380px" w="100%">
             <FormLabel className="label">Last name</FormLabel>
             <input
               type="text"
               placeholder="Enter your last name"
-              maxW="348px"
+              maxW="380px"
               id="last_name"
             />
           </Box>
