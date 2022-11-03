@@ -89,7 +89,7 @@ export const Home = () => {
             <br />
             <sub>Everything to know about design.</sub>
           </a>
-          <a href="#/contact" id="contact">
+          <a href="/contact" id="contact">
             Contact us
           </a>
           <Flex direction="row" columnGap="27px" justify="center" mt="24px">

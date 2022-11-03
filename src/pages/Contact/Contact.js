@@ -6,13 +6,16 @@ export const Contact = () => {
     document.getElementById("message").placeholder =
       "Hey there, hope you're doing great. Let us collaborate.";
   };
+  const submit = () => {
+    alert("Thank you! Your response has been submitted successfully.");
+  };
   return (
     <div className="contact">
       <p className="p1">Contact Me</p>
       <p className="p2">
         Hi there, contact me to ask me about anything you have in mind.
       </p>
-      <form action="" method="get">
+      <form onSubmit={submit}>
         <Flex
           columnGap="24px"
           rowGap="24px"
@@ -24,6 +27,7 @@ export const Contact = () => {
             <FormLabel className="label">First name</FormLabel>
             <input
               type="text"
+              name="name"
               placeholder="Enter your first name"
               maxW="380px"
               id="first_name"
@@ -33,6 +37,7 @@ export const Contact = () => {
             <FormLabel className="label">Last name</FormLabel>
             <input
               type="text"
+              name="name"
               placeholder="Enter your last name"
               maxW="380px"
               id="last_name"
@@ -42,7 +47,12 @@ export const Contact = () => {
         <FormLabel mt="24px" className="label">
           Email
         </FormLabel>
-        <input type="text" placeholder="yourname@email.com" id="email" />
+        <input
+          type="text"
+          name="email"
+          placeholder="yourname@email.com"
+          id="email"
+        />
       </form>
       <FormLabel mt="24px" className="label">
         Message
@@ -56,7 +66,13 @@ export const Contact = () => {
       <Checkbox colorScheme="blue" id="chk" mt="26px">
         You agree to providing your data to patra who may contact you.
       </Checkbox>
-      <button id="btn__submit" type="submit">
+      <button
+        id="btn__submit"
+        type="submit"
+        name="submit"
+        value="submit"
+        onClick={submit}
+      >
         Send message
       </button>
     </div>
