@@ -6,7 +6,7 @@ import { Contact } from "./pages/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
 function App() {
   return (
-    <Box minH="800px" h="fit-content" px="20px" py="20px" my={20}>
+    <Box minH="800px" h="fit-content" px="20px" my={10}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="contact" element={<Contact />} />

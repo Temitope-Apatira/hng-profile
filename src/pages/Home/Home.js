@@ -36,7 +36,7 @@ export const Home = () => {
             <div className="dp_container">
               <Image src={dp} id="profile__img" className="image" w="100%" />
               <div className="overlay">
-                <Image src={camera} mt="60px" />
+                <Image src={camera} mt="60px" ml="30px" />
               </div>
             </div>
             <Text id="twitter">patra_tee</Text>
