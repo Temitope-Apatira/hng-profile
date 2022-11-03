@@ -33,9 +33,10 @@ export const Contact = () => {
       message.classList.add("invalid");
       messageError.setAttribute("aria-hidden", false);
       messageError.setAttribute("aria-invalid", true);
-      document.getElementById("mess age").focus();
+      document.getElementById("message").focus();
       return true;
     } else alert("Thank you! Your response has been submitted successfully.");
+    window.location.reload();
   };
   return (
     <div className="contact">
