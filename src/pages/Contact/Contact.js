@@ -6,8 +6,27 @@ export const Contact = () => {
     document.getElementById("message").placeholder =
       "Hey there, hope you're doing great. Let us collaborate.";
   };
-  const submit = () => {
-    alert("Thank you! Your response has been submitted successfully.");
+  const validate = () => {
+    if (document.getElementById("first_name").value === "") {
+      alert("Please provide your first name!");
+      document.getElementById("first_name").focus();
+      return false;
+    }
+    if (document.getElementById("last_name").value === "") {
+      alert("Please provide your last name!");
+      document.getElementById("last_name").focus();
+      return false;
+    }
+    if (document.getElementById("email").value === "") {
+      alert("Please provide your email!");
+      document.getElementById("email").focus();
+      return false;
+    }
+    if (document.getElementById("message").value === "") {
+      alert("Please leave a message");
+      document.getElementById("message").focus();
+      return false;
+    } else alert("Thank you! Your response has been submitted successfully.");
   };
   return (
     <div className="contact">
@@ -15,7 +34,7 @@ export const Contact = () => {
       <p className="p2">
         Hi there, contact me to ask me about anything you have in mind.
       </p>
-      <form onSubmit={submit}>
+      <form onSubmit={validate}>
         <Flex
           columnGap="24px"
           rowGap="24px"
