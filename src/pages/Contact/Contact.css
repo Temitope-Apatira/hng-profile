@@ -129,3 +129,8 @@ button {
 #message.invalid {
   border-color: red;
 }
+.css-1ydjfm6[data-checked] {
+  background: #ffffff !important;
+  border-color: #1570ef !important;
+  color: #1570ef !important;
+}
