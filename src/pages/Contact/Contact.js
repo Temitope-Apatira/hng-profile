@@ -14,6 +14,7 @@ export const Contact = () => {
     const email = document.getElementById("email");
     const message = document.getElementById("message");
     const messageError = document.getElementById("messageError");
+    const agree = document.getElementById("chk");
     if (firstName.value === "") {
       alert("Please provide your first name!");
       firstName.focus();
@@ -36,6 +37,11 @@ export const Contact = () => {
       messageError.setAttribute("aria-invalid", true);
       document.getElementById("message").focus();
       return true;
+    }
+    if (!agree.checked) {
+      alert("Please indicate that you agree!");
+      agree.focus();
+      return false;
     } else alert("Thank you! Your response has been submitted successfully.");
     window.location.reload();
   };
@@ -101,7 +107,7 @@ export const Contact = () => {
         >
           Please enter a message
         </p>
-        <Checkbox colorScheme="blue" id="chk" mt="26px">
+        <Checkbox colorScheme="blue" id="chk" mt="26px" name="agree">
           You agree to providing your data to {name} who may contact you.
         </Checkbox>
         <button id="btn__submit" type="submit" name="submit" value="submit">
