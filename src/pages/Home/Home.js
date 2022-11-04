@@ -6,6 +6,7 @@ import share2 from "../../assets/images/share2.png";
 import camera from "../../assets/images/camera.png";
 import slack from "../../assets/images/slack.png";
 import git from "../../assets/images/giticon.png";
+import { Link } from "react-router-dom";
 import "./Home.css";
 export const Home = () => {
   return (
@@ -89,9 +90,9 @@ export const Home = () => {
             <br />
             <sub>Everything to know about design.</sub>
           </a>
-          <a href="/contact" id="contact">
+          <Link to="/contact" id="contact">
             Contact me
-          </a>
+          </Link>
           <Flex direction="row" columnGap="27px" justify="center" mt="24px">
             <Image src={slack} />
             <Image src={git} />

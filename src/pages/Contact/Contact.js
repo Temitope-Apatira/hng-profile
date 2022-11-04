@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, FormLabel, Box, Textarea, Checkbox } from "@chakra-ui/react";
 import "./Contact.css";
 export const Contact = () => {
+  const name = "patra";
   const changePlaceholder = () => {
     document.getElementById("message").placeholder =
       "Hey there, hope you're doing great. Let us collaborate.";
@@ -101,15 +102,9 @@ export const Contact = () => {
           Please enter a message
         </p>
         <Checkbox colorScheme="blue" id="chk" mt="26px">
-          You agree to providing your data to patra who may contact you.
+          You agree to providing your data to {name} who may contact you.
         </Checkbox>
-        <button
-          id="btn__submit"
-          type="submit"
-          name="submit"
-          value="submit"
-          // onClick={submit}
-        >
+        <button id="btn__submit" type="submit" name="submit" value="submit">
           Send message
         </button>
       </form>
