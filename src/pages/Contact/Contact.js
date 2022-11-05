@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, FormLabel, Box, Textarea, Checkbox } from "@chakra-ui/react";
 import "./Contact.css";
 export const Contact = () => {
-  const name = "patra";
+  const name = "Osah Temitope";
   const changePlaceholder = () => {
     document.getElementById("message").placeholder =
       "Hey there, hope you're doing great. Let us collaborate.";
